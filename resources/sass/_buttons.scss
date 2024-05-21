@@ -1,0 +1,56 @@
+.btn {
+    color: white !important;
+    margin-bottom: 0.2rem;
+}
+
+.btn a, .btn a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: $color-primary !important;
+    border-color: $color-primary !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.btn-secondary {
+    background-color: $color-secondary !important;
+    border-color: $color-secondary !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.btn-tertiary {
+    background-color: $color-tertiary !important;
+    border-color: $color-tertiary !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.btn-quaternary {
+    background-color: $color-quaternary !important;
+    border-color: $color-quaternary !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.btn-outline-primary {
+    background-color: transparent !important;
+    border-color: $color-primary !important;
+    color: $color-primary !important;
+    border: 1px solid !important;
+    border-radius: 10px !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: $color-primary !important;
+    color: white !important;
+}
+
+.btn-skin-random {
+    font-weight: bold;
+    width: 80%;
+    margin: 0;
+}

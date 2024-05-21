@@ -1,0 +1,157 @@
+.container-header {
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.container-content {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding:0.3rem;
+    border: 0.2rem solid;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.container-header-primary {
+    @extend .container-header;
+    background-color: $color-primary;
+}
+
+
+.container-content-primary {
+    @extend .container-content;
+    border-color: $color-primary;
+}
+
+.container-header-secondary {
+    @extend .container-header;
+    background-color: $color-secondary;
+}
+
+
+.container-content-secondary {
+    @extend .container-content;
+    border-color: $color-secondary;
+}
+
+.container-header-tertiary {
+    @extend .container-header;
+    background-color: $color-tertiary;
+}
+
+
+.container-content-tertiary {
+    @extend .container-content;
+    border-color: $color-tertiary;
+}
+
+.container-header-quaternary {
+    @extend .container-header;
+    background-color: $color-quaternary;
+}
+
+
+.container-content-quaternary {
+    @extend .container-content;
+    border-color: $color-quaternary;
+}
+
+.separator {
+    background-color: white;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding:0.3rem;
+}
+
+.separator-primary {
+    @extend .separator;
+    background-color: $color-primary;
+}
+
+.separator-secondary {
+    @extend .separator;
+    background-color: $color-secondary;
+}
+
+.separator-tertiary {
+    @extend .separator;
+    background-color: $color-tertiary;
+}
+
+.separator-quaternary {
+    @extend .separator;
+    background-color: $color-quaternary;
+}
+
+.color-primary {
+    color: $color-primary;
+}
+
+.color-quaternary {
+    color: $color-quaternary;
+}
+
+.color-tertiary {
+    color: $color-tertiary;
+}
+
+.bg-quaternary {
+    background-color: $color-quaternary !important;
+}
+
+.footer-page {
+    background-image: url('/images/footer-page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 742px;
+    height: 130px;
+}
+
+.stars {
+    background-image: url('/images/stars.png');
+    background-repeat: no-repeat;
+    margin-top: 0.1rem;
+    display: inline-block;
+    width: 43px;
+    height: 21px;
+}
+
+footer {
+    width: auto;
+    padding: 0;
+    background-image: linear-gradient(to bottom,#dadada,#ffffff);
+    border-top: $color-primary 1rem solid;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a, footer a:hover {
+    color: $color-primary !important;
+    font-weight: bold;
+}
+
+.ranking-navbar table {
+    margin-bottom: 0 !important;
+}
+
+.text-small {
+    font-size: 11px;
+}
+
+.news-title {
+    color: #858899;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.smile {
+    display: initial !important;
+}

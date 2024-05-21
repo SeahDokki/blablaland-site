@@ -1,0 +1,46 @@
+.first-login {
+    background: #fff3cd url("/images/festif.png") no-repeat top left;
+}
+
+.first-login strong:first-child {
+    color: rgb(247, 0, 189);
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr 0.55fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.news-1 { grid-area: 1 / 1 / 2 / 2; }
+.news-2 { grid-area: 1 / 2 / 2 / 3; }
+
+.topic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.topic-1 { grid-area: 1 / 1 / 2 / 2; }
+.topic-2 { grid-area: 1 / 2 / 2 / 3; }
+
+/*
+.container-content-primary, .container-content-secondary,
+.container-content-quaternary, .container-content-tertiary {
+    padding: 0 !important;
+}
+*/
+
+.news ul, .topic ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news a, .topic a {
+    text-decoration: none;
+}

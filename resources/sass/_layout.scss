@@ -1,0 +1,45 @@
+:root {
+    --bs-body-font-family: Verdana, Arial, Helvetica, sans-serif !important;
+    --bs-body-font-size: 12px !important;
+}
+
+body {
+    background-color: $bg-main !important;
+    background-image: url("/images/background/background.png"),
+                      url("/images/background/default.png");
+    background-repeat: no-repeat, repeat;
+    background-position: center 0px;
+}
+
+.container {
+    min-width: 1030px !important;
+    max-width: 1000px !important;
+}
+
+.container a {
+    color: $color-secondary;
+}
+
+.container a:hover {
+    color: $color-secondary-hover;
+}
+
+.row {
+    flex-wrap: nowrap;
+}
+
+.pagination {
+    margin: 0.1rem !important;
+}
+
+.page-link {
+    font-weight: normal !important;
+    text-decoration: underline;
+}
+
+.page-item .active .page-link {
+    background-color: transparent;
+    border: 1px solid #dee2e6 !important;
+    font-weight: bold !important;
+    color: #3795e2 !important;
+}

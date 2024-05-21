@@ -1,0 +1,123 @@
+.navbar-tools {
+    color: $color-secondary;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0 3px 2px -2px $color-secondary;
+}
+
+.navbar-tools a, a:active, a:hover {
+    color: $color-secondary;
+}
+
+.navbar-tools .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "link game";
+  }
+
+.navbar-tools .link {
+    text-align: left;
+    grid-area: link;
+}
+
+.navbar-tools .game {
+    text-align: right;
+    grid-area: game;
+}
+
+.navbar-banner {
+    background-image: url('/images/banner-rusty.png');
+    width: 1000px;
+    height: 150px;;
+}
+
+.navbar {
+    padding: 0 !important;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: $color-primary;
+}
+
+.navbar a {
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    border-radius: 0.5rem;
+}
+
+.navbar-nav a:hover, .navbar-nav .active {
+    color: $color-primary !important;
+    background-color: white;
+    text-shadow: none;
+}
+
+.navbar-nav .nav-link {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    font-size: 13px;
+    margin: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-item {
+    border-right: solid 1px rgba(255,255,255,0.5);
+}
+
+.navbar-nav .nav-item:last-child {
+    border-right: none;
+}
+
+.navbar-nav .nav-item button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    outline: inherit;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 0.3rem !important;
+    padding-left: 0.3rem !important;
+    margin-top: 9px !important;
+    margin-bottom: 9px !important;
+}
+
+.btn-play {
+    background-color: $color-tertiary;
+    text-transform: uppercase;
+    cursor: grab;
+}
+
+.login-avatar {
+    background-color: rgba(255,255,255,0.8);
+    padding: 1.5rem 0.5rem .5rem .5rem;
+}
+
+.login-form {
+    background-color: rgba(255,255,255,0.8);
+    min-width: 182px;
+    padding: 1rem 1rem 1rem .1rem;
+}
+
+.login-form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.login-form li {
+    background-color: white;
+    height: 18px;
+    border-radius: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.login-form li a {
+    color: $color-secondary;
+    font-size: 11px;
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.table-striped-primary a {
+    text-decoration: none;
+}
+
+.table-striped-primary {
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+.table-striped-primary thead {
+    background-color: $color-primary;
+    color: white;
+}
+
+.table-striped-primary > tbody > tr {
+    background-color: rgba($color-primary, 0.1);
+    border-color: white;
+}
+
+.table-striped-primary > tbody > tr:nth-child(odd) > td,
+.table-striped-primary > tbody > tr:nth-child(odd) > th {
+    background-color: rgba($color-primary, 0.2)
+}

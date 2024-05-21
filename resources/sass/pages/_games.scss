@@ -1,0 +1,42 @@
+@import '../variables';
+
+.info-games a {
+    text-decoration: none;
+    color: black !important
+}
+
+.info-games a:hover {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.game-title {
+    font-size: 20px !important;
+    color: #858899;
+    font-weight: bold;
+}
+
+.game-description {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.game-help-title {
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.game-token {
+    display: inline;
+    background-color: #fdffcd;
+}
+
+.game-score {
+    font-size: 14px;
+    font-weight: bold;
+    color: #22b70e;
+}
+
+.game-list-rewards {
+    margin-top: 1rem;
+}

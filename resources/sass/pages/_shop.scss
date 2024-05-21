@@ -1,0 +1,58 @@
+#shop a {
+    text-decoration: none;
+    color: #212529 !important;
+}
+
+#shop a:hover {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+#shop p {
+    margin: 0 !important;
+}
+
+.shop-title {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 2rem !important;
+}
+
+.shop-info {
+    color: #767A8D;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.skin-name {
+    font-weight: bold;
+}
+
+.token {
+    color: #00b200;
+    font-weight: bold;
+}
+
+.shop-pagination {
+    margin-bottom: 0.8rem;
+}
+
+.alert p {
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.separator-preview {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.text-preview {
+    display: inline-block;
+    color: #601786 !important;
+}
+
+.power-quantity {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 12.5px;
+}

@@ -1,0 +1,19 @@
+// Font-Awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+//jQuery
+@import '~jquery-ui/themes/base/all.css';
+
+@import 'variables';
+@import 'layout';
+@import 'navbar';
+@import 'page';
+@import 'buttons';
+@import 'form';
+@import 'table';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
