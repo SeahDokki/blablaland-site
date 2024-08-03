@@ -81,3 +81,5 @@ php artisan serve
 
 il seras accessible à l'adresse suivante http://localhost:8000/
 
+Pour installer le serveur, rendez-vous sur [ce depot github](https://github.com/SeahDokki/blablaland-serveur)
+
