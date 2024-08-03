@@ -38,7 +38,7 @@ extension=zip
 
 Créez un nouveau dossier et ouvrez un terminal à l'interieur
 ```
-https://github.com/SeahDokki/blablaland-site.git
+git clone https://github.com/SeahDokki/blablaland-site.git
 ```
 
 A la racine du projet, installez les dépendences
