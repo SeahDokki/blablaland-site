@@ -61,7 +61,7 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'username'              => ['required', 'min:3', 'max:10', 'unique:users', new UniquePseudo, new BadString, 'regex:/^[A-Za-z0-9_-]*$/'],
-            'email'                 => ['required', 'email', 'max:255', 'indisposable', 'regex:/^[^+]*$/', 'unique:users'],
+            //'email'                 => ['required', 'email', 'max:255', 'indisposable', 'regex:/^[^+]*$/', 'unique:users'],
             'password'              => ['required', 'min:6', 'max:20', 'confirmed', Rules\Password::defaults()],
             'rules'                 => ['required'],
             //'cf-turnstile-response' => ['required', Rule::turnstile()],
@@ -103,7 +103,7 @@ class RegisteredUserController extends Controller
             if (!$error) {
                 $user = User::create([
                     'username'  => $request->username,
-                    'email'     => $request->email,
+                    //'email'     => $request->email,
                     'password'  => Hash::make($request->password),
                 ]);
                 $user->createPlayer();

@@ -28,7 +28,7 @@
                                     <small class="form-text text-muted">3 à 10 caractères, chiffres et lettres sans caractères spéciaux sauf "-" et "_". Ton login te servira à te connecter à Blablaland.</small>
                                 @enderror
                             </div>
-                            <div class="form-group mb-1">
+                            <!-- <div class="form-group mb-1">
                                 <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
                                 <input id="email" class="form-control @error('email') is-invalid @enderror" placeholder="Saisie une email" type="email" name="email" value="{{ old('email') }}" required autofocus />
                                 @error('email')
@@ -36,7 +36,7 @@
                                 @else
                                     <small class="form-text text-muted">Obligatoire pour valider ton compte ^^</small>
                                 @enderror
-                            </div>
+                            </div> -->
                             <div class="form-group mb-1">
                                 <label for="password"><i class="fa-solid fa-key"></i> Mot de passe</label>
                                 <input id="password" class="form-control @error('password') is-invalid @enderror"
