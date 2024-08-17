@@ -33,8 +33,7 @@ class RegisteredUserController extends Controller
      */
     public function index(Request $request): View
     {
-        $state = $request->session()->get('state');
-        return view('auth.register.index', compact('state'));
+        return view('auth.register.create');
     }
 
     /**
@@ -48,7 +47,7 @@ class RegisteredUserController extends Controller
         // if (!$discordUser || $discordUser['user_id']) {
         //     return abort(404);
         // }
-        return view('auth.register.create', compact('discordUser'));
+        return view('auth.register.create');
     }
 
     /**
