@@ -91,7 +91,7 @@ Route::post('scripts/console/gradesNameList.php', [\App\Http\Controllers\Blablal
 Route::post('scripts/console/updatePseudo.php', [\App\Http\Controllers\Blablaland\ConsoleController::class, 'updatePseudo'])->name('blablaland.console.updatePseudo');
 Route::post('scripts/console/setDroits.php', [\App\Http\Controllers\Blablaland\ConsoleController::class, 'setDroits'])->name('blablaland.console.setDroits');
 Route::post('scripts/console/getInsultronList.php', [\App\Http\Controllers\Blablaland\ConsoleController::class, 'getInsultronList'])->name('blablaland.console.getInsultronList');
-Route::post('scripts/console/setInsultronList.php', [\App\Http\Controllers\Blablaland\ConsoleController::class, 'setInsultronList'])->name('blablaland.console.getInsultronList');
+Route::post('scripts/console/setInsultronList.php', [\App\Http\Controllers\Blablaland\ConsoleController::class, 'setInsultronList'])->name('blablaland.console.setInsultronList');
 Route::post('scripts/console/getGradeUser.php', [\App\Http\Controllers\Blablaland\ConsoleController::class, 'getGradeUser'])->name('blablaland.console.getGradeUser');
 Route::post('scripts/console/setGradeUser.php', [\App\Http\Controllers\Blablaland\ConsoleController::class, 'setGradeUser'])->name('blablaland.console.setGradeUser');
 Route::post('scripts/console/clearsession.php', [\App\Http\Controllers\Blablaland\ConsoleController::class, 'clearSession'])->name('blablaland.console.clearSession');
