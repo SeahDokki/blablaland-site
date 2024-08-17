@@ -41,13 +41,13 @@ class RegisteredUserController extends Controller
      * @param string $token
      * @return View
      */
-    public function create(string $token): View
+    public function create(/* string $token */): View
     {
-        $discordUser = DiscordUser::where('confirmation_token', $token)->first();
+        // $discordUser = DiscordUser::where('confirmation_token', $token)->first();
 
-        if (!$discordUser || $discordUser['user_id']) {
-            return abort(404);
-        }
+        // if (!$discordUser || $discordUser['user_id']) {
+        //     return abort(404);
+        // }
         return view('auth.register.create', compact('discordUser'));
     }
 
@@ -65,7 +65,7 @@ class RegisteredUserController extends Controller
             'email'                 => ['required', 'email', 'max:255', 'indisposable', 'regex:/^[^+]*$/', 'unique:users'],
             'password'              => ['required', 'min:6', 'max:20', 'confirmed', Rules\Password::defaults()],
             'rules'                 => ['required'],
-            'cf-turnstile-response' => ['required', Rule::turnstile()],
+            //'cf-turnstile-response' => ['required', Rule::turnstile()],
         ], [
             'email.indisposable'    => 'Les adresses électroniques jetables ne sont pas autorisées.',
             'username.unique'       => "Ce login n'est pas disponible."
@@ -77,28 +77,28 @@ class RegisteredUserController extends Controller
                         ->groupBy('user_id')
                         ->get()
                         ->count();
-        $discordUser = DiscordUser::where('confirmation_token', $token)
-                        ->first();
+        // $discordUser = DiscordUser::where('confirmation_token', $token)
+        //                 ->first();
 
-        if (!$discordUser || $discordUser['user_id']) {
-            $error = "Le token n'est pas valide !";
-        }
+        // if (!$discordUser || $discordUser['user_id']) {
+        //     $error = "Le token n'est pas valide !";
+        // }
 
-        if (!$error) {
-            try {
-                $response = Http::withHeaders([
-                    'X-Key' => env('IPHUB_API_KEY'),
-                ])->get("http://v2.api.iphub.info/ip/$ipAddress");
+        // if (!$error) {
+        //     try {
+        //         $response = Http::withHeaders([
+        //             'X-Key' => env('IPHUB_API_KEY'),
+        //         ])->get("http://v2.api.iphub.info/ip/$ipAddress");
 
-                if ($accounts >= 5) {
-                    $error = "Trop de comptes différents ont été utilisés à partir de cette adresse IP, ton inscription est donc impossible. Pour plus d'informations, contact l'équipe sur Discord.";
-                } else if ($response->json()['block'] === 1) {
-                    $error = "Adresse IP proxy détectée.";
-                }
-            } catch (\Exception $e) {
-                $error = "Une erreur s'est produite lors de la requête vers l'Anti-VPN.";
-            }
-        }
+        //         if ($accounts >= 5) {
+        //             $error = "Trop de comptes différents ont été utilisés à partir de cette adresse IP, ton inscription est donc impossible. Pour plus d'informations, contact l'équipe sur Discord.";
+        //         } else if ($response->json()['block'] === 1) {
+        //             $error = "Adresse IP proxy détectée.";
+        //         }
+        //     } catch (\Exception $e) {
+        //         $error = "Une erreur s'est produite lors de la requête vers l'Anti-VPN.";
+        //     }
+        // }
 
         try {
             if (!$error) {
@@ -116,7 +116,7 @@ class RegisteredUserController extends Controller
                     'ip_address' => $user->getIP()
                 ]);
 
-                $discordUser->update(['user_id' => $user->id]);
+                //$discordUser->update(['user_id' => $user->id]);
                 event(new Registered($user));
 
                 Auth::login($user);

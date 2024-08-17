@@ -14,9 +14,9 @@ Route::get('discord', [\App\Http\Controllers\DiscordController::class, 'index'])
 Route::get('discord/callback', [\App\Http\Controllers\DiscordController::class, 'callback'])->name('discord.callback');
 
 Route::middleware('guest')->group(function () {
-    Route::get('register', [RegisteredUserController::class, 'index'])->name('register');
-    Route::get('register/{token}', [RegisteredUserController::class, 'create'])->name('register.create');
-    Route::post('register/{token}', [RegisteredUserController::class, 'store']);
+    Route::get('register', [RegisteredUserController::class, 'index'])->name('register.create');
+    //Route::get('register/{token}', [RegisteredUserController::class, 'create'])->name('register.create');
+    //Route::post('register/{token}', [RegisteredUserController::class, 'store']);
     Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
     Route::post('login', [AuthenticatedSessionController::class, 'store']);
     Route::get('forgot-password', [PasswordResetLinkController::class, 'create'])->name('password.request');

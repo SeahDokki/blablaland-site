@@ -101,7 +101,7 @@
                             </p>
 
                             <p>Découvre un monde où ta seule limite sera ton imagination :)</p>
-                            <a href="{{ route('register') }}">
+                            <a href="{{ route('register.create') }}">
                                 Clique ici pour t'inscrire : Une nouvelle vie t'attend !!
                             </a>
                         </div>

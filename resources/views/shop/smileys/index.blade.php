@@ -24,7 +24,7 @@
                                            Se connecter
                                        </a>
                                        ou
-                                       <a href="{{ route('register') }}">
+                                       <a href="{{ route('register.create') }}">
                                            s'inscrire
                                        </a>
                                    </p>

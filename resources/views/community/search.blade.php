@@ -63,7 +63,7 @@
                             <span class="text-danger fw-bold">
                                 Désolé, tu dois être identifié pour utiliser l'annuaire de Blablaland !
                             </span><br>
-                            <a href="{{ route('login') }}">Connecte-toi,</a> ou <a href="{{ route('register') }}">inscris-toi</a> :D
+                            <a href="{{ route('login') }}">Connecte-toi,</a> ou <a href="{{ route('register.create') }}">inscris-toi</a> :D
                         </div>
                     @endif
                 @endisset

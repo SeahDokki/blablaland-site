@@ -131,7 +131,7 @@
                     </form>
                 @else
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('register*') ? 'active' : '' }}" href="{{ route('register') }}">
+                        <a class="nav-link {{ request()->is('register*') ? 'active' : '' }}" href="{{ route('register.create') }}">
                             <i class="fas fa-user-plus"></i>
                             Inscription
                         </a>
