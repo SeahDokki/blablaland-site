@@ -58,7 +58,7 @@ Route::get('shop/objects', [\App\Http\Controllers\Shop\PowerController::class, '
 Route::get('shop/objects/filter', [\App\Http\Controllers\Shop\PowerController::class, 'filter'])->name('shop.power.filter');
 Route::get('shop/objects/gender/{id}', [\App\Http\Controllers\Shop\PowerController::class, 'gender'])->name('shop.power.gender');
 Route::get('shop/objects/{power}', [\App\Http\Controllers\Shop\PowerController::class, 'show'])->name('shop.power.show');
-Route::get('site/shop_objet.php', [\App\Http\Controllers\Shop\PowerController::class, 'redirect'])->name('shop.skin.redirect');
+Route::get('site/shop_objet.php', [\App\Http\Controllers\Shop\PowerController::class, 'redirect'])->name('shop.objet.redirect');
 
 Route::get('shop/smileys', [\App\Http\Controllers\Shop\SmileyController::class, 'index'])->name('shop.smiley.index');
 Route::get('shop/smileys/{smiley}', [\App\Http\Controllers\Shop\SmileyController::class, 'show'])->name('shop.smiley.show');
