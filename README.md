@@ -73,11 +73,22 @@ DB_DATABASE=blablaland
 DB_USERNAME=VOTRE_USERNAME_BDD
 DB_PASSWORD=VOTRE_MOT_DE_PASSE
 ```
+Ensuite vous devrez valider votre configuration avec la commande suivante
+
+```
+php artisan config:cache
+```
+
+suivi de 
+```
+php artisan storage:link
+```
 
 Ensuite vous pouvez lancer le site en mode `dev`
 ```
 php artisan serve
 ```
+
 
 il seras accessible à l'adresse suivante http://localhost:8000/
 
