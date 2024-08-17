@@ -15,7 +15,7 @@ class MapSeeder extends Seeder
     public function run()
     {
         \DB::table('maps')->delete();
-
+	\DB::statement('SET SQL_MODE=NO_AUTO_VALUE_ON_ZERO;');
         \DB::table('maps')->insert(array (
             0 =>
                 array (
