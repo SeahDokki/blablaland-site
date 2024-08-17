@@ -57,7 +57,7 @@ class RegisteredUserController extends Controller
      *
      * @throws ValidationException
      */
-    public function store(Request $request, string $token): Application|Redirector|RedirectResponse|\Illuminate\Contracts\Foundation\Application
+    public function store(Request $request /*, string $token*/): Application|Redirector|RedirectResponse|\Illuminate\Contracts\Foundation\Application
     {
         $request->validate([
             'username'              => ['required', 'min:3', 'max:10', 'unique:users', new UniquePseudo, new BadString, 'regex:/^[A-Za-z0-9_-]*$/'],
