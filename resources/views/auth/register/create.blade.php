@@ -17,7 +17,7 @@
                             <span class="fs-5">Bienvenue sur Blablaland</span>
                             <p class="mt-1">Pars à l'aventure en solo ou avec tes amis. Discute, participe à des jeux en temps réel et vis des expériences incroyables. Rejoins-nous dès maintenant et laisse libre cours à ton imagination sur Blablaland !</p>
                         </div>
-                        <form method="POST" action="{{ route('register.create', $discordUser->confirmation_token) }}">
+                        <form method="POST" action="{{ route('register.create') }}">
                             @csrf
                             <div class="form-group">
                                 <label for="login"><i class="fa-solid fa-user"></i> Login</label>
