@@ -103,7 +103,7 @@ class RegisteredUserController extends Controller
             if (!$error) {
                 $user = User::create([
                     'username'  => $request->username,
-                    //'email'     => $request->email,
+                    'email'     => "",
                     'password'  => Hash::make($request->password),
                 ]);
                 $user->createPlayer();
