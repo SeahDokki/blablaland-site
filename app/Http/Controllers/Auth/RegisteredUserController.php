@@ -121,7 +121,7 @@ class RegisteredUserController extends Controller
                 Auth::login($user);
             }
         } catch (\Exception $e) {
-            $error = 'Erreur lors de la soumission du formulaire';
+            $error = 'Erreur lors de la soumission du formulaire '.$e->getMessage();
         }
 
         if ($error) {
