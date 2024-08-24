@@ -94,3 +94,12 @@ il seras accessible à l'adresse suivante http://localhost:8000/
 
 # Pour installer le serveur, rendez-vous sur [ce depot github](https://github.com/SeahDokki/blablaland-serveur)
 
+## Ensuite
+
+Si vous deployez Blablaland sur un serveur
+Il est essentiel de modifier les fichiers `params.xml` dans
+- /public/
+- /public/console
+
+afin de pouvoir se connecter au tchat
+
