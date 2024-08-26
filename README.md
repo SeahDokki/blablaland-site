@@ -10,6 +10,8 @@ N'hésitez pas à contribuer au projet si vous rencontrez des bugs
 - Faites remonter les bugs en créant de issues sur ce repos
 - Participer au projet en créant vos propre pull request
 
+Besoin d'aide ? Rejoins le [Discord Officiel Blablaland.link](https://discord.gg/aPtdHc7z4q)
+
 # Installation
 Avant de commencer l'installation vous aurez besoin d'un certain nombre de dépendences à installer
 - [Git](https://git-scm.com/downloads)
