@@ -122,7 +122,7 @@
                                             <strong>
                                                 Tu dois être identifié pour voir les signatures des membres.<br>
                                             </strong>
-                                            <a href="{{ route('login') }}">S'identifier</a> ou <a href="{{ route('register') }}" class="fw-bold">s'inscrire</a>
+                                            <a href="{{ route('login') }}">S'identifier</a> ou <a href="{{ route('register.create') }}" class="fw-bold">s'inscrire</a>
                                         </p>
                                     @endauth
                                 </div>
