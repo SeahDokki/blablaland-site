@@ -49,10 +49,10 @@ class ArtworkController extends Controller
         ]);
 
         $path = $request->file('picture')->store('public/artclub');
-        ImageManager::imagick()->read(Storage::path($path))->save(Storage::path($path));
+        ImageManager::gd()->read(Storage::path($path))->save(Storage::path($path));
 
         $path_bis = $request->file('picture_min')->store('public/artclub');
-        ImageManager::imagick()->read(Storage::path($path_bis))->save(Storage::path($path_bis));
+        ImageManager::gd()->read(Storage::path($path_bis))->save(Storage::path($path_bis));
 
         $artwork                = new Artwork;
         $artwork->picture       = $path;
@@ -103,11 +103,12 @@ class ArtworkController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return void
+     * @param Artwork $artwork
+     * @return RedirectResponse
      */
-    public function destroy($id)
+    public function destroy(Artwork $artwork): RedirectResponse
     {
-        //
+        $artwork->delete();
+        return redirect()->route('dashboard.artwork.index');
     }
 }
